@@ -1,0 +1,8 @@
+
+Steps to set up the new centos7 instance as a host server.
+1. Install nginx, git, postgres
+
+sudo yum update
+sudo yum install nginx git postgresql postgresql-server
+
+2.  
