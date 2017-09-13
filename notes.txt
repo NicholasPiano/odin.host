@@ -1,8 +1,25 @@
 
 Steps to set up the new centos7 instance as a host server.
-1. Install nginx, git, postgres
+1. Install stuff
 
 sudo yum update
-sudo yum install nginx git postgresql postgresql-server
+sudo yum install epel-release wget nginx git postgresql postgresql-server nano
 
-2.  
+4. Create nginx definition
+	a. Get startup script and deploy in order to use service
+	https://askubuntu.com/questions/257108/trying-to-start-nginx-on-vps-i-get-nginx-unrecognized-service
+	https://unix.stackexchange.com/questions/20357/how-can-i-make-a-script-in-etc-init-d-start-at-boot
+	http://articles.slicehost.com/2009/2/2/centos-adding-an-nginx-init-script
+	https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-centos-7
+	(EPEL release required for nginx)
+
+	# Create file
+	sudo nano /etc/init.d/nginx
+	sudo chmod +x /etc/init.d/nginx
+
+	# Add nginx to the system startup
+	sudo chkconfig --add nginx
+	sudo chkconfig --level 2345 nginx on
+
+	b. Create server definition in server directory
+	
