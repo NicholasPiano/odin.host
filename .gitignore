@@ -8,3 +8,9 @@ lib/
 include/
 pyvenv.cfg
 pip-selfcheck.json
+
+# python3.6
+__pycache__
+
+# django
+db.sqlite3

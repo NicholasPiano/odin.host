@@ -2,4 +2,6 @@
 (date 22/09/2017)
 
 1. Creating basic django project using sqlite and the django development server to serve the host information.
-
+  a. (guide redhat_python36)
+  b. (map guest:8080 host:8080) in Vagrantfile
+  c. 
