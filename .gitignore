@@ -1,2 +1,9 @@
 
+# vagrant
 vm/
+
+# venv
+bin/
+lib/
+pyvenv.cfg
+pip-selfcheck.json
