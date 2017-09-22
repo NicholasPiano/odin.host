@@ -1,0 +1,17 @@
+{% load staticfiles %}
+<!doctype html>
+<html {{ html_attr|safe }}>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<title>{% block title %}{% endblock %}</title>
+		<meta name='description' content='{% block description %}{% endblock %}'>
+		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no'>
+	</head>
+	<body {{ body_attr|safe }}>
+		<div id='hook' server='{{ registry.server }}' uuid='{{ registry.uuid }}'></div>
+		<script src='{% static "app/js/util.js" %}'></script>
+		<script src='{% static "app/js/core.js" %}'></script>
+		<script src='{% static "app/js/host.js" %}'></script>
+	</body>
+</html>
