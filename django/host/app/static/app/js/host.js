@@ -11,9 +11,9 @@ What does a simplified version of this look like?
 */
 
 (function () {
-	// 1. contact registry server using credentials in the hook element
-	Core.registry.contact().then(function () {
-		// 2. 
+  // 1. contact registry server using credentials in the hook element
+  Core.registry.contact().then(function () {
+    // 2. 
 
-	});
+  });
 })()
